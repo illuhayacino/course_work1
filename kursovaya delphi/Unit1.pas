@@ -23,7 +23,6 @@ type
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
-    OpenPictureDialog1: TOpenPictureDialog;
     Button2: TButton;
     Button4: TButton;
     Label1: TLabel;

@@ -3,8 +3,8 @@ object Form4: TForm4
   Top = 0
   BorderStyle = bsDialog
   Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1085#1080#1077' '#1079#1072#1087#1080#1089#1080
-  ClientHeight = 497
-  ClientWidth = 565
+  ClientHeight = 759
+  ClientWidth = 536
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,6 +12,8 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnActivate = FormCreate
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -56,9 +58,17 @@ object Form4: TForm4
     Height = 13
     Caption = #1058#1077#1083#1077#1092#1086#1085
   end
+  object Image1: TImage
+    Left = 32
+    Top = 368
+    Width = 185
+    Height = 153
+    Proportional = True
+    Stretch = True
+  end
   object Button1: TButton
-    Left = 33
-    Top = 416
+    Left = 8
+    Top = 704
     Width = 121
     Height = 33
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
@@ -66,8 +76,8 @@ object Form4: TForm4
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 384
-    Top = 416
+    Left = 368
+    Top = 704
     Width = 121
     Height = 33
     Caption = #1054#1090#1084#1077#1085#1072
@@ -128,5 +138,27 @@ object Form4: TForm4
     DataSource = DataModule2.DataSource1
     MaxLength = 13
     TabOrder = 7
+  end
+  object Button3: TButton
+    Left = 28
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = #1054#1073#1079#1086#1088
+    TabOrder = 8
+    OnClick = Button3Click
+  end
+  object DBMemo1: TDBMemo
+    Left = 120
+    Top = 538
+    Width = 177
+    Height = 23
+    DataField = 'doctors_photo'
+    DataSource = DataModule2.DataSource1
+    TabOrder = 9
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 320
+    Top = 536
   end
 end
