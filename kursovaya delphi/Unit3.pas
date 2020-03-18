@@ -27,6 +27,7 @@ type
     Image1: TImage;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,6 +50,11 @@ end;
 procedure TForm3.Button2Click(Sender: TObject);
 begin
      Form4.Show;
+end;
+
+procedure TForm3.FormActivate(Sender: TObject);
+begin
+     Form3.Image1.Picture.LoadFromFile(Form4.DBMemo1.Text);
 end;
 
 end.

@@ -11,6 +11,7 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -125,14 +126,15 @@ object Form3: TForm3
     DataSource = DataModule2.DataSource1
   end
   object Image1: TImage
-    Left = 416
-    Top = 312
-    Width = 105
-    Height = 105
-  end
-  object DBImage1: TDBImage
     Left = 8
     Top = 8
+    Width = 137
+    Height = 185
+    Stretch = True
+  end
+  object DBImage1: TDBImage
+    Left = 416
+    Top = 280
     Width = 137
     Height = 185
     DataField = 'doctors_photo'
