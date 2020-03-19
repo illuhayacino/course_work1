@@ -11,6 +11,7 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -56,7 +57,7 @@ object Form3: TForm3
     Left = 208
     Top = 132
     Width = 64
-    Height = 18
+    Height = 16
     Caption = #1058#1077#1083#1077#1092#1086#1085':'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -82,14 +83,20 @@ object Form3: TForm3
     Left = 208
     Top = 32
     Width = 145
-    Height = 17
+    Height = 25
     DataField = 'FIO'
     DataSource = DataModule2.DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
   end
   object DBText2: TDBText
     Left = 336
     Top = 90
-    Width = 65
+    Width = 113
     Height = 17
     DataField = 'type_of_doctor'
     DataSource = DataModule2.DataSource1
@@ -118,9 +125,16 @@ object Form3: TForm3
     DataField = 'phone_number'
     DataSource = DataModule2.DataSource1
   end
-  object DBImage1: TDBImage
+  object Image1: TImage
     Left = 8
     Top = 8
+    Width = 137
+    Height = 185
+    Stretch = True
+  end
+  object DBImage1: TDBImage
+    Left = 416
+    Top = 280
     Width = 137
     Height = 185
     DataField = 'doctors_photo'
@@ -140,8 +154,8 @@ object Form3: TForm3
     TitleFont.Style = []
   end
   object DBGrid2: TDBGrid
-    Left = 328
-    Top = 202
+    Left = 416
+    Top = 177
     Width = 209
     Height = 87
     TabOrder = 2
@@ -150,5 +164,23 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 480
+    Width = 113
+    Height = 33
+    Caption = #1053#1072' '#1075#1083#1072#1074#1085#1091#1102
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 712
+    Top = 484
+    Width = 91
+    Height = 29
+    Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100
+    TabOrder = 4
+    OnClick = Button2Click
   end
 end

@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1042#1088#1072#1095#1080' '#1087#1086#1083#1080#1082#1083#1080#1085#1080#1082#1080' '#8470'1'
-  ClientHeight = 631
-  ClientWidth = 1248
+  ClientHeight = 646
+  ClientWidth = 1107
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object Form1: TForm1
   object Image1: TImage
     Left = 0
     Top = 0
-    Width = 1248
-    Height = 232
+    Width = 1107
+    Height = 247
     Align = alClient
     Center = True
     Picture.Data = {
@@ -4557,6 +4557,8 @@ object Form1: TForm1
       8EA7A54A10F03AD145390217CAF97348D0D14564510491E57AD45B02914515A1
       2285C1F6A938A28A96523FFFD9}
     ExplicitTop = -6
+    ExplicitWidth = 1248
+    ExplicitHeight = 232
   end
   object Label1: TLabel
     Left = 8
@@ -4575,8 +4577,8 @@ object Form1: TForm1
   end
   object DBGrid1: TDBGrid
     Left = 0
-    Top = 232
-    Width = 1248
+    Top = 247
+    Width = 1107
     Height = 399
     Align = alBottom
     Color = clHighlight
@@ -4628,7 +4630,6 @@ object Form1: TForm1
         FieldName = 'time_of_work'
         Title.Alignment = taCenter
         Title.Caption = #1042#1088#1077#1084#1103' '#1088#1072#1073#1086#1090#1099
-        Width = -1
         Visible = False
       end
       item
@@ -4739,10 +4740,5 @@ object Form1: TForm1
       Caption = #1042#1099#1093#1086#1076
       OnClick = N5Click
     end
-  end
-  object OpenPictureDialog1: TOpenPictureDialog
-    FileName = 'C:\Users\mryac\OneDrive\'#1048#1079#1086#1073#1088#1072#1078#1077#1085#1080#1103'\'#1082#1086#1090'.jpg'
-    Left = 696
-    Top = 32
   end
 end

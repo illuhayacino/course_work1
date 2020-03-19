@@ -40,7 +40,7 @@ object Form5: TForm5
     Top = 80
     Width = 75
     Height = 25
-    Caption = #1054#1090#1084#1077#1085#1072
+    Caption = #1053#1077#1090
     TabOrder = 1
     OnClick = Button2Click
   end
