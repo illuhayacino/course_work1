@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.343,C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.dfm=C:\labs\kursovaya delphi\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.410,C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.dfm=C:\labs\kursovaya delphi\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.915,=G:\kursovaya delphi\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.367,=C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas=C:\labs\kursovaya delphi\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.673,=G:\kursovaya delphi\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.410,C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.pas=C:\labs\kursovaya delphi\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.315,=C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.761,=C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.738,C:\Users\mryac\OneDrive\Документы\Embarcadero\Studio\Projects\Project1.dproj=C:\labs\kursovaya delphi\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.846,=C:\labs\kursovaya delphi\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>
