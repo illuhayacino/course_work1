@@ -12,6 +12,8 @@ type
     ADOQuery1: TADOQuery;
     ADOQuery2: TADOQuery;
     DataSource2: TDataSource;
+    DataSource3: TDataSource;
+    ADOQuery3: TADOQuery;
   private
     { Private declarations }
   public

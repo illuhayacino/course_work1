@@ -34,7 +34,7 @@ object DataModule2: TDataModule2
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
-      'select* from doctor_visit ORDER BY doctor')
+      'select* from doctors_get ')
     Left = 184
     Top = 104
   end
@@ -42,5 +42,20 @@ object DataModule2: TDataModule2
     DataSet = ADOQuery2
     Left = 184
     Top = 184
+  end
+  object DataSource3: TDataSource
+    DataSet = ADOQuery3
+    Left = 288
+    Top = 184
+  end
+  object ADOQuery3: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select* from working_time ')
+    Left = 288
+    Top = 104
   end
 end

@@ -31,6 +31,7 @@ uses Unit1, Unit2;
 procedure TForm5.Button1Click(Sender: TObject);
 begin
    DataModule2.ADOQuery1.Delete;
+   DataModule2.ADOQuery3.Delete;
    Form5.Close;
 end;
 

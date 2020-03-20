@@ -18,15 +18,24 @@ type
     Label5: TLabel;
     Label6: TLabel;
     DBEdit1: TDBEdit;
-    DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
-    DBEdit4: TDBEdit;
-    DBEdit5: TDBEdit;
     DBEdit6: TDBEdit;
     Image1: TImage;
     Button3: TButton;
     DBMemo1: TDBMemo;
     OpenPictureDialog1: TOpenPictureDialog;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    DBComboBox1: TDBComboBox;
+    DBComboBox2: TDBComboBox;
+    DBComboBox3: TDBComboBox;
+    DBComboBox4: TDBComboBox;
+    DBComboBox5: TDBComboBox;
+    DBComboBox6: TDBComboBox;
+    DBComboBox7: TDBComboBox;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -49,6 +58,7 @@ uses Unit1, Unit2, Unit3;
 procedure TForm4.Button1Click(Sender: TObject);
 begin
 if DataModule2.ADOQuery1.Modified then DataModule2.ADOQuery1.Post;
+if DataModule2.ADOQuery3.Modified then DataModule2.ADOQuery3.Post;
 Form4.Close;
 end;
 

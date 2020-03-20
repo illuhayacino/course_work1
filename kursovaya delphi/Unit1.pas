@@ -54,21 +54,25 @@ uses Unit2, Unit3, Unit4, Unit5;
 procedure TForm1.BitBtn1Click(Sender: TObject);
 begin
     DataModule2.ADOQuery1.First;
+    DataModule2.ADOQuery3.First;
 end;
 
 procedure TForm1.BitBtn2Click(Sender: TObject);
 begin
     DataModule2.ADOQuery1.Prior;
+    DataModule2.ADOQuery3.Prior;
 end;
 
 procedure TForm1.BitBtn3Click(Sender: TObject);
 begin
   DataModule2.ADOQuery1.Next;
+   DataModule2.ADOQuery3.Next;
 end;
 
 procedure TForm1.BitBtn4Click(Sender: TObject);
 begin
   DataModule2.ADOQuery1.last;
+  DataModule2.ADOQuery3.last;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -80,6 +84,7 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
  DataModule2.ADOQuery1.Append;
+ DataModule2.ADOQuery3.Append;
  Form4.Show;
 end;
 
