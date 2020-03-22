@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = #1092#1086#1088#1084#1072' '#1087#1088#1086#1089#1084#1086#1090#1088#1072
+  Caption = #1046#1091#1088#1085#1072#1083' '#1087#1088#1080#1105#1084#1072
   ClientHeight = 591
   ClientWidth = 659
   Color = clBtnFace
@@ -126,10 +126,10 @@ object Form3: TForm3
     DataSource = DataModule2.DataSource1
   end
   object Image1: TImage
-    Left = 24
+    Left = 8
     Top = 23
-    Width = 137
-    Height = 162
+    Width = 162
+    Height = 161
     Stretch = True
   end
   object DBText6: TDBText
@@ -270,5 +270,14 @@ object Form3: TForm3
     DataSource = DataModule2.DataSource1
     TabOrder = 3
     Visible = False
+  end
+  object Button3: TButton
+    Left = 528
+    Top = 361
+    Width = 113
+    Height = 30
+    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1072#1094#1080#1077#1085#1090#1072
+    TabOrder = 4
+    OnClick = Button3Click
   end
 end

@@ -49,7 +49,6 @@ object DataModule2: TDataModule2
     Top = 184
   end
   object ADOQuery3: TADOQuery
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     Parameters = <>
@@ -57,5 +56,20 @@ object DataModule2: TDataModule2
       'select* from working_time ')
     Left = 288
     Top = 104
+  end
+  object DataSource4: TDataSource
+    DataSet = ADOQuery4
+    Left = 400
+    Top = 192
+  end
+  object ADOQuery4: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select* from pacients')
+    Left = 400
+    Top = 120
   end
 end

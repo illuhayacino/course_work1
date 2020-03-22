@@ -33,9 +33,11 @@ type
     Label9: TLabel;
     Label10: TLabel;
     DBMemo1: TDBMemo;
+    Button3: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,6 +60,11 @@ end;
 procedure TForm3.Button2Click(Sender: TObject);
 begin
      Form4.Show;
+end;
+
+procedure TForm3.Button3Click(Sender: TObject);
+begin
+    DataModule2.ADOQuery2.Append;
 end;
 
 procedure TForm3.FormActivate(Sender: TObject);

@@ -14,6 +14,8 @@ type
     DataSource2: TDataSource;
     DataSource3: TDataSource;
     ADOQuery3: TADOQuery;
+    DataSource4: TDataSource;
+    ADOQuery4: TADOQuery;
   private
     { Private declarations }
   public
@@ -27,7 +29,7 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
-uses Unit4, Unit5;
+uses Unit4, Unit5, Unit6;
 
 {$R *.dfm}
 
