@@ -23,7 +23,7 @@ type
     Label5: TLabel;
     DBComboBox2: TDBComboBox;
     Label6: TLabel;
-    DBEdit6: TDBEdit;
+    DBComboBox3: TDBComboBox;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
@@ -56,26 +56,212 @@ end;
 
 procedure TForm6.DBComboBox2Change(Sender: TObject);
 begin
-     case Form6.DBComboBox2.Items of
-        'Понедельник' :
+     case Form6.DBComboBox2.ItemIndex of
+        0 :
          begin
-              Form6.DBEdit6.Text:=Form3.DBText4;
+              if DataModule2.DataSource3.DataSet.FieldByName('monday').Text= '8.00-12.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'8.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'8.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'9.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'9.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'10.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'10.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'11.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'11.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('monday').Text= '12.00-16.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'12.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'12.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'13.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'13.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'14.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'14.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'15.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'15.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('monday').Text= '16.00-20.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'16.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'16.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'17.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'17.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'18.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'18.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'19.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'19.30') ;
+                        end;
          end;
-         'Вторник' :
+         1 :
          begin
-              Form6.DBEdit6.Text:=Form3.DBText6;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Tuesday').Text= '8.00-12.00' then
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'8.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'8.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'9.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'9.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'10.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'10.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'11.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'11.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Tuesday').Text= '12.00-16.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'12.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'12.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'13.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'13.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'14.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'14.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'15.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'15.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Tuesday').Text= '16.00-20.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'16.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'16.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'17.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'17.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'18.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'18.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'19.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'19.30') ;
+                        end;
          end;
-         'Среда' :
+
+         2 :
          begin
-              Form6.DBEdit6.Text:=Form3.DBText7;
+              if DataModule2.DataSource3.DataSet.FieldByName('Wednesday').Text= '8.00-12.00' then
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'8.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'8.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'9.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'9.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'10.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'10.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'11.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'11.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Wednesday').Text= '12.00-16.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'12.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'12.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'13.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'13.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'14.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'14.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'15.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'15.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Wednesday').Text= '16.00-20.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'16.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'16.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'17.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'17.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'18.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'18.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'19.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'19.30') ;
+                        end;
          end;
-         'Четверг' :
+
+         3 :
          begin
-              Form6.DBEdit6.Text:=Form3.DBText8;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Thursday').Text= '8.00-12.00' then
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'8.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'8.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'9.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'9.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'10.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'10.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'11.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'11.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Thursday').Text= '12.00-16.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'12.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'12.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'13.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'13.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'14.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'14.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'15.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'15.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Thursday').Text= '16.00-20.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'16.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'16.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'17.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'17.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'18.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'18.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'19.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'19.30') ;
+                        end;
          end;
-         'Пятница' :
+
+         4 :
          begin
-              Form6.DBEdit6.Text:=Form3.DBText9;
+              if DataModule2.DataSource3.DataSet.FieldByName('Friday').Text= '8.00-12.00' then
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'8.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'8.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'9.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'9.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'10.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'10.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'11.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'11.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Friday').Text= '12.00-16.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'12.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'12.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'13.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'13.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'14.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'14.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'15.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'15.30') ;
+                        end;
+
+              if DataModule2.DataSource3.DataSet.FieldByName('Friday').Text= '16.00-20.00' then
+
+                        begin
+                             Form6.DBComboBox3.Items.Insert(0 ,'16.00') ;
+                             Form6.DBComboBox3.Items.Insert(1 ,'16.30') ;
+                             Form6.DBComboBox3.Items.Insert(2 ,'17.00') ;
+                             Form6.DBComboBox3.Items.Insert(3 ,'17.30') ;
+                             Form6.DBComboBox3.Items.Insert(4 ,'18.00') ;
+                             Form6.DBComboBox3.Items.Insert(5 ,'18.30') ;
+                             Form6.DBComboBox3.Items.Insert(6 ,'19.00') ;
+                             Form6.DBComboBox3.Items.Insert(7 ,'19.30') ;
+                        end;
          end;
 
      end;

@@ -19,7 +19,6 @@ type
     DBText3: TDBText;
     DBText4: TDBText;
     DBText5: TDBText;
-    DBGrid1: TDBGrid;
     Button1: TButton;
     Button2: TButton;
     Image1: TImage;
@@ -32,8 +31,8 @@ type
     Label8: TLabel;
     Label9: TLabel;
     Label10: TLabel;
-    DBMemo1: TDBMemo;
     Button3: TButton;
+    DBGrid1: TDBGrid;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
@@ -48,7 +47,7 @@ var
   Form3: TForm3;
 
 implementation
-   uses Unit2, Unit1, Unit4;
+   uses Unit2, Unit1, Unit4, Unit6, Unit5;
 {$R *.dfm}
 
 procedure TForm3.Button1Click(Sender: TObject);
@@ -65,6 +64,7 @@ end;
 procedure TForm3.Button3Click(Sender: TObject);
 begin
     DataModule2.ADOQuery2.Append;
+    Form6.Show;
 end;
 
 procedure TForm3.FormActivate(Sender: TObject);
@@ -72,13 +72,13 @@ procedure TForm3.FormActivate(Sender: TObject);
 begin
 
      Form3.Image1.Picture.LoadFromFile(Form4.DBMemo1.Text);
-          dctr:= '%'+Form3.DBMemo1.Text+'%';
+          dctr:= '%'+DataModule2.DataSource1.DataSet.FieldByName('FIO').Text+'%';
           dctr1:= QuotedStr(dctr);
      with DataModule2.ADOQuery2 do
        begin
          Close;
          SQL.Clear;
-         SQL.Add('select * from doctors_get where FIO like'+dctr1+'order by FIO' ) ;
+         SQL.Add('select * from doctors_get where FIO like'+dctr1+'order by day' ) ;
          Open;
        end;
 end;

@@ -2,8 +2,8 @@ object Form6: TForm6
   Left = 0
   Top = 0
   Caption = #1047#1072#1087#1080#1089#1100' '#1087#1072#1094#1080#1077#1085#1090#1072
-  ClientHeight = 510
-  ClientWidth = 442
+  ClientHeight = 427
+  ClientWidth = 347
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -57,8 +57,8 @@ object Form6: TForm6
     Caption = #1044#1086#1089#1090#1091#1087#1085#1086#1077' '#1074#1088#1077#1084#1103' '#1076#1083#1103' '#1087#1088#1080#1105#1084#1072':'
   end
   object Button1: TButton
-    Left = 24
-    Top = 472
+    Left = 8
+    Top = 384
     Width = 75
     Height = 25
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
@@ -79,8 +79,10 @@ object Form6: TForm6
     Top = 80
     Width = 121
     Height = 21
+    BiDiMode = bdLeftToRight
     DataField = 'age'
     DataSource = DataModule2.DataSource4
+    ParentBiDiMode = False
     TabOrder = 2
   end
   object DBEdit3: TDBEdit
@@ -105,8 +107,8 @@ object Form6: TForm6
     TabOrder = 4
   end
   object Button2: TButton
-    Left = 336
-    Top = 472
+    Left = 248
+    Top = 384
     Width = 75
     Height = 25
     Caption = #1054#1090#1084#1077#1085#1072
@@ -149,14 +151,13 @@ object Form6: TForm6
     TabOrder = 8
     OnChange = DBComboBox2Change
   end
-  object DBEdit6: TDBEdit
-    Left = 200
+  object DBComboBox3: TDBComboBox
+    Left = 183
     Top = 317
-    Width = 73
+    Width = 98
     Height = 21
     DataField = 'time'
-    DataSource = DataModule2.DataSource2
-    ReadOnly = True
+    DataSource = DataModule2.DataSource4
     TabOrder = 9
   end
 end

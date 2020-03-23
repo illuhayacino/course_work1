@@ -29,7 +29,7 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
-uses Unit4, Unit5, Unit6;
+uses Unit4, Unit5, Unit6, Unit3;
 
 {$R *.dfm}
 
