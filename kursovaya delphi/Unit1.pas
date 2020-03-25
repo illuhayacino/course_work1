@@ -26,6 +26,7 @@ type
     Button2: TButton;
     Button4: TButton;
     Label1: TLabel;
+    Panel1: TPanel;
     procedure N5Click(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn2Click(Sender: TObject);
