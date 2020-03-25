@@ -34,7 +34,9 @@ object DataModule2: TDataModule2
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
-      'select* from doctors_get ')
+      'SELECT * FROM pacients'
+      ''
+      '')
     Left = 184
     Top = 104
   end

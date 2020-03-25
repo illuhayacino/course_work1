@@ -3,7 +3,8 @@ unit Unit2;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB,
+  Data.Bind.Components, Data.Bind.DBScope;
 
 type
   TDataModule2 = class(TDataModule)

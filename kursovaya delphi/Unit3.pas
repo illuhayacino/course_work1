@@ -72,13 +72,13 @@ procedure TForm3.FormActivate(Sender: TObject);
 begin
 
      Form3.Image1.Picture.LoadFromFile(Form4.DBMemo1.Text);
-          dctr:= '%'+DataModule2.DataSource1.DataSet.FieldByName('FIO').Text+'%';
+          dctr:= '%'+DataModule2.DataSource1.DataSet.FieldByName('id').Text+'%';
           dctr1:= QuotedStr(dctr);
      with DataModule2.ADOQuery2 do
        begin
          Close;
          SQL.Clear;
-         SQL.Add('select * from doctors_get where FIO like'+dctr1+'order by day' ) ;
+         SQL.Add('select * from pacients where id like'+dctr1+'order by day' ) ;
          Open;
        end;
 end;

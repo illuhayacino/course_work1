@@ -268,5 +268,51 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id'
+        Visible = False
+      end
+      item
+        Expanded = False
+        FieldName = 'day'
+        Title.Caption = #1044#1077#1085#1100' '#1087#1088#1105#1084#1072
+        Width = 85
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'time'
+        Title.Caption = #1042#1088#1077#1084#1103' '#1087#1088#1080#1105#1084#1072
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'name'
+        Title.Caption = #1055#1072#1094#1080#1077#1085#1090
+        Width = 120
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'age'
+        Title.Caption = #1042#1086#1079#1088#1072#1089#1090
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'sex'
+        Title.Caption = #1055#1086#1083
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'adress'
+        Title.Caption = #1040#1076#1088#1077#1089
+        Width = 180
+        Visible = True
+      end>
   end
 end

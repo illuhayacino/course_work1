@@ -157,7 +157,7 @@ object Form6: TForm6
     Width = 98
     Height = 21
     DataField = 'time'
-    DataSource = DataModule2.DataSource4
+    DataSource = DataModule2.DataSource2
     TabOrder = 9
   end
 end
