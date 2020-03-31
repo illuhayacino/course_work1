@@ -2383,14 +2383,14 @@ object Form3: TForm3
     object Label10: TLabel
       Left = 322
       Top = 277
-      Width = 79
-      Height = 33
+      Width = 67
+      Height = 21
       Caption = #1055#1103#1090#1085#1080#1094#1072
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -17
       Font.Name = 'Tahoma'
-      Font.Style = [fsItalic]
+      Font.Style = []
       ParentFont = False
     end
     object Label2: TLabel
@@ -2435,53 +2435,54 @@ object Form3: TForm3
     object Label6: TLabel
       Left = 322
       Top = 153
-      Width = 127
-      Height = 32
+      Width = 103
+      Height = 21
       Caption = #1055#1086#1085#1077#1076#1077#1083#1100#1085#1080#1082
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -17
       Font.Name = 'Tahoma'
-      Font.Style = [fsItalic]
+      Font.Style = []
       ParentFont = False
+      WordWrap = True
     end
     object Label7: TLabel
       Left = 322
       Top = 181
-      Width = 67
-      Height = 26
+      Width = 64
+      Height = 21
       Caption = #1042#1090#1086#1088#1085#1080#1082
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -17
       Font.Name = 'Tahoma'
-      Font.Style = [fsItalic]
+      Font.Style = []
       ParentFont = False
     end
     object Label8: TLabel
       Left = 322
       Top = 245
-      Width = 87
-      Height = 26
+      Width = 62
+      Height = 21
       Caption = #1063#1077#1090#1074#1077#1088#1075
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -17
       Font.Name = 'Tahoma'
-      Font.Style = [fsItalic]
+      Font.Style = []
       ParentFont = False
     end
     object Label9: TLabel
       Left = 322
       Top = 213
-      Width = 55
-      Height = 26
+      Width = 46
+      Height = 21
       Caption = #1057#1088#1077#1076#1072
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -17
       Font.Name = 'Tahoma'
-      Font.Style = [fsItalic]
+      Font.Style = []
       ParentFont = False
     end
     object Button1: TButton

@@ -5,7 +5,7 @@ object Form1: TForm1
   HorzScrollBar.ParentColor = False
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = #1042#1088#1072#1095#1080' '#1087#1086#1083#1080#1082#1083#1080#1085#1080#1082#1080' '#8470'1'
+  Caption = #1042#1088#1072#1095#1080' '#1087#1086#1083#1080#1082#1083#1080#1085#1080#1082#1080' '#8470'115'
   ClientHeight = 686
   ClientWidth = 1118
   Color = clWhite
@@ -6781,8 +6781,6 @@ object Form1: TForm1
     Color = 11849449
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 362
-    ExplicitWidth = 1109
     object Label1: TLabel
       Left = 8
       Top = 6
@@ -6905,6 +6903,7 @@ object Form1: TForm1
   object MainMenu1: TMainMenu
     object N2: TMenuItem
       Caption = #1057#1087#1088#1072#1074#1082#1072
+      OnClick = N2Click
     end
     object N5: TMenuItem
       Caption = #1042#1099#1093#1086#1076

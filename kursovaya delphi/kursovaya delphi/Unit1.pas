@@ -7,7 +7,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.ExtCtrls,
   Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.Imaging.pngimage, Vcl.Menus,
-  Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtDlgs, Vcl.Mask, Vcl.Imaging.jpeg, Vcl.XPMan;
+  Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtDlgs, Vcl.Mask, Vcl.Imaging.jpeg, Vcl.XPMan, ShellAPI;
 
 type
   TForm1 = class(TForm)
@@ -36,6 +36,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
+    procedure N2Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -112,6 +113,11 @@ procedure TForm1.Edit1Change(Sender: TObject);
          Open;
        end;
     end;
+
+procedure TForm1.N2Click(Sender: TObject);
+begin
+   ShellExecute(Handle, 'open', 'help.chm', 0, 0, SW_SHOWNORMAL);
+end;
 
 procedure TForm1.N5Click(Sender: TObject);
 begin
